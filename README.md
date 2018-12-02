@@ -9,7 +9,7 @@ ________________________________________________________________________________
 
 para saber que versión de sistema operativo tenemos:
 ```
-cat /etc/*relase
+cat /etc/*release
 ```
 otra forma saber que versión de sistema operativo tenemos:
 ```
