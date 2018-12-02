@@ -8,7 +8,7 @@ systemctl start nginx
 systemctl stop nginx  
 systemctl restart nginx  
 ```
-Rutas
+Rutas Principales
 
 ```
 /var/www/                   # contenedor de archivos a publicar en el server  
