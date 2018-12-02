@@ -102,7 +102,7 @@ rm -rf nombre_carpeta
 ```
 
 
-### Como crear un script
+Como crear un script
 
 ```
 #!/bin/bash
@@ -235,7 +235,7 @@ Nginx Accesos
 ```
 cat /var/log/nginx/access.log | tail -10
 ```
-### Log de Nginx 
+Log de Nginx 
 ```
 cat /var/log/nginx/error.log
 ```
