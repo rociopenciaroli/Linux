@@ -1,4 +1,6 @@
-# Comandos LINUX para Administración 
+# Comandos LINUX para Administración y Monitoreo
+
+- [x] Ale DC
 
 ### El propósito de este repositorio es listar todos los comandos que mas frecuentemente utilizo par administrar servidores en las distribuciónes Ubuntu Server y Centos.
 
