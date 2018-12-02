@@ -1,9 +1,9 @@
-## Crontab - Comandos básicos
+## Crontab - uso básico y comandos
 
 - [x] Ale Dc
 
 
-En estas carpetas se guardan los scropts a ejecutarse segun frecuenca de ejecución
+En estas carpetas se guardan los scripts a ejecutarse segun frecuenca de ejecución
 ```
 /etc/cron.  
 /etc/cron.daily  
