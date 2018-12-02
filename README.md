@@ -216,4 +216,64 @@ tail -n ruta_archivo   (donde n será el numero de lineas que se quiera mostrar)
 
 
 
+Intentos de acceso como root
+```
+grep root /var/log/auth.log |tail -10
+```
+
+Logs Mysql
+```
+cat /var/log/mysql/error.log
+```
+
+Log Servidor Apache 
+```
+cat /var/log/apache2/error.log
+```
+
+Nginx Accesos
+```
+cat /var/log/nginx/access.log | tail -10
+```
+### Log de Nginx 
+```
+cat /var/log/nginx/error.log
+```
+
+Log del Mail Server 
+```
+tail -10 /var/log/mail.err
+```
+
+Tiempos de respuesta del servidor
+```
+iostat
+```
+
+cuanto tiempo hace que el server está arriba.
+```
+uptime
+```
+
+Salud del disco rígido
+```
+df -h
+```
+
+Memoria RAM disponible
+```
+free -h
+```
+
+
+Verificacion de Procesos
+```
+top
+```
+
+
+Verificacion de puertos
+
+```
+netstat -atun 
 ```
