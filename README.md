@@ -2,8 +2,10 @@
 
 - [x] Ale DC
 
-### El propósito de este repositorio es listar todos los comandos que mas frecuentemente utilizo par administrar servidores en las distribuciónes Ubuntu Server y Centos.
+#### El propósito de este repositorio es listar los comandos que frecuentemente utilizo par administrar y monitorear Servers en las Distribuciónes Ubuntu Server y Centos. Todos ellos para ser ejecutados en la terminal.
 
+
+______________________________________________________________________________________________________
 
 para saber que versión de sistema operativo tenemos:
 ```
