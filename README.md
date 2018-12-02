@@ -27,10 +27,38 @@ Comprueba version de kernel:
 uname -r
 ```
 
+Listar comandos de la terminal:
+```
+# listar todos los comandos 
+history
+
+# listar los ultimos 20 comandos
+history 20
+
+# volver a ejecutar un comando por su número
+!77    donde 77 será el número del comando que aparece listado.
+
+# borrar historial
+history -c
+
+# archivo en donde se guardan los comandos dentro de la carpeta de cada usuario
+.bash_history
+```
+
+Indicar la ruta actual en la que estamos parados
+```
+pwd
+```
+
+
+
 Listar archivos:
 ```
 # mostrar archivos y sus tamaños
 ls -sh
+
+# ordenar por fecha de modificacion
+ls -t
 ```
 
 Listar usuarios en ubuntu:
@@ -174,7 +202,7 @@ service rsyslog status
 service rsyslog start
 service rsyslog stop
 service rsyslog restart
-
+```
 
 
 Monitoreo de Logs y demas
@@ -184,7 +212,7 @@ tail -f
 
 # mostrar cierta cantidad de lineas de un log
 tail -n ruta_archivo   (donde n será el numero de lineas que se quiera mostrar)
-
+```
 
 
 
