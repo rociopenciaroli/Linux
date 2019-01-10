@@ -281,3 +281,11 @@ Verificacion de puertos
 ```
 netstat -atun 
 ```
+
+Verificar que Proceso tiene tomado un puerto:
+
+```
+netstat -tulpn
+```
+
+
