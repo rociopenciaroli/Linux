@@ -142,6 +142,11 @@ instalar el paquete en caso de que no esté instalado:
 ```
 apt-get install tzdata
 ```
+Opción para configurar la zona horaria con una sola linea creando un enlace simbolico 
+```
+ln -fs /usr/share/zoneinfo/America/Argentina/Buenos_Aires /etc/localtime && dpkg-reconfigure -f noninteractive tzdata
+```
+
 
 # listar zona horaria actual
 ```
