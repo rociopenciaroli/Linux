@@ -137,28 +137,36 @@ find -name nombre_archivi
 ```
 
 Zona Horaria
+
+instalar el paquete en caso de que no esté instalado:
 ```
+apt-get install tzdata
+```
+
 # listar zona horaria actual
 ```
 timedatectl
 ```
 # listar zonas horarias
+```
 timedatectl list-timezones
-
+```
 # setear zona horaria
+```
 timedatectl set-timezone America/Argentina/Buenos_Aires
-
+```
 # otra posible opcion de hacer lo mismo
+```
 apt-get install systemd-services
 dpkg-reconfigure tzdata
 ```
 
-Ver paquetes instalados:
+# Ver paquetes instalados:
 ```
 dpkg -l
 ````
 
-Desinstalar paquetes
+# Desinstalar paquetes
 ```
 apt-get remove nombre_paquete
 apt-get purge nombre_paquete
@@ -166,7 +174,7 @@ apt-get purge paquete*
 apt-get clean nombre_paquete
 ```
 
-Procesos
+# Procesos
 ```
 # listar todos los procesos
 ps -a
