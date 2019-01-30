@@ -119,7 +119,7 @@ docker exec -u 0 -i -t --privileged 204a5d5419b2 /bin/bash
 
 Luego guardar el script con extension .sh y dar permisos de ejecución:
 ```
-chmod =x nombre_archivo.sh
+chmod +x nombre_archivo.sh
 ```
 Para ejecutar el script se deberá anteponer ./
 ```
