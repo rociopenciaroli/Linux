@@ -301,4 +301,10 @@ Verificar que Proceso tiene tomado un puerto:
 netstat -tulpn
 ```
 
+Restablecer el escritorio de Ubuntu
+```
+dconf reset -f /
+```
+
+
 
