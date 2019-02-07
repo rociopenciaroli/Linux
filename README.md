@@ -134,6 +134,49 @@ find / -name nombre_archivo
 
 # buscar en la carpeta actual
 find -name nombre_archivi
+
+# buscar una carpeta
+find / -type f -name carpeta_que busco*
+find / -type d -name archivo_Que_busco*
+
+# buscar archivos que tengan ciertos permisos
+find / -type d -perm 777
+
+# buscar si el archivo está vacío
+find . -type f -empty
+
+# buscar por tamaño de archivo
+find . -size 21k
+find . -size 5M
+
+Modificados los datos en las últimas X*24h (- dtime n)
+find . -tipe f -dtime 2  (en las últimas 48h = 2*24)
+
+Accedidos en las últimas X*24h (- atime n)
+find . -tipe f -atime 2  (en las últimas 48h = 2*24)
+
+
+
+Buscar la localización de un fichero binario, fuente o manual
+
+whereis grep
+grep: /bin/grep /usr/share/man/man1/grep.1.gz /usr/share/man/man1p/grep.1p.gz
+
+```
+
+Existe un paquete llamado __locate__ que también es usado para buscar.
+Este paquete no es nativo por lo que debe ser instalado
+
+```
+apt-get install mlocate
+```
+luego hay que crear una base de datos con el indice de los archivos del sistema
+```
+updatedb
+```
+luego podremos buscar con locate
+```
+locate nombre_paquete
 ```
 
 Zona Horaria
