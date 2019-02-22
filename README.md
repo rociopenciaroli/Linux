@@ -1,4 +1,4 @@
-# Comandos LINUX Manual de Bolsillo   
+# Comandos LINUX - Manual de Bolsillo   
 
 - [x] Ale DC
 
@@ -64,6 +64,10 @@ pwd
 ```
 # mostrar archivos y sus tamaños
 ls -sh
+```
+# Mostrar archivos con sus permisos en formato de numero (777)
+```
+stat -c %a nombre_archivo
 ```
 # ordenar por fecha de modificacion
 ```
