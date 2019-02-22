@@ -7,106 +7,108 @@
 
 ______________________________________________________________________________________________________
 
-para saber que versión de sistema operativo tenemos:
+# para saber que versión de sistema operativo tenemos:
 ```
 cat /etc/*release
 ```
-otra forma saber que versión de sistema operativo tenemos:
+# Otra forma saber que versión de sistema operativo tenemos:
 ```
 lsb_release -a
 ```
 
-verificar si el sistema operativo es de 32 o 64 bits:
+# Verificar si el sistema operativo es de 32 o 64 bits:
 ```
 uname -m
 ```
 
-Verificar version de Centos:
+# Verificar version de Centos:
 ```
 cat /etc/centos-release
 ```
 
-Comprueba version de kernel:
+# Comprueba version de kernel:
 ```
 uname -r
 ```
 
-Listar comandos de la terminal:
-```
+# Listar comandos de la terminal:
+
 # listar todos los comandos 
+```
 history
 
+```
 # listar los ultimos 20 comandos
+```
 history 20
-
+```
 # volver a ejecutar un comando por su número
+```
 !77    donde 77 será el número del comando que aparece listado.
-
+```
 # borrar historial
+```
 history -c
-
+```
 # archivo en donde se guardan los comandos dentro de la carpeta de cada usuario
+```
 .bash_history
 ```
 
-Indicar la ruta actual en la que estamos parados
+# Indicar la ruta actual en la que estamos parados
 ```
 pwd
 ```
 
-
-
-Listar archivos:
+# Listar archivos:
 ```
 # mostrar archivos y sus tamaños
 ls -sh
-
+```
 # ordenar por fecha de modificacion
+```
 ls -t
 ```
-
-Listar usuarios en ubuntu:
+# Listar usuarios en ubuntu:
 ```
 compgen -u
 ```
-Listar grupos:
+# Listar grupos:
 ```
 compgen -g
 ```
-Agregar/Borrar grupo:
+# Agregar/Borrar grupo:
 ```
 group add nombre_grupo
 group del nombre_gripo
 ```
-Agregar usuario:
+# Agregar usuario:
 ```
 adduser
 ```
 
-Mostrar a que grupos pertenece un usuario:
+# Mostrar a que grupos pertenece un usuario:
 ```
 groups nombre_user
 ```
 
-Agregar un usuario a un grupo:
+# Agregar un usuario a un grupo:
 ```
 usermod -aG nombre_grupo nombre_usuario
 usermod -aG sudo nombre_usuario
-
 ```
 
-Borrar usuario y todos sus archivos:
+# Borrar usuario y todos sus archivos:
 ```
 deluser --remove-home nomre_usuario
 ```
 
-Borrar una carpeta y todas sus subcarpetas:
+# Borrar una carpeta y todas sus subcarpetas:
 ```
 rm -rf nombre_carpeta
 ```
 
-
-Como crear un script
+# Como crear un script
 
 ```
 #!/bin/bash
@@ -117,79 +119,86 @@ pause 'Entrando al Docker de INFLUX Y GRAFANA, con usuario ROOT -  Presione Ente
 docker exec -u 0 -i -t --privileged 204a5d5419b2 /bin/bash
 ```
 
-Luego guardar el script con extension .sh y dar permisos de ejecución:
+# Luego guardar el script con extension .sh y dar permisos de ejecución:
 ```
 chmod +x nombre_archivo.sh
 ```
-Para ejecutar el script se deberá anteponer ./
+# Para ejecutar el script se deberá anteponer ./
 ```
 ./nomhre_script.sh
 ```
 
-Buscar archivos:
-```
+# Buscar archivos:
 
 # buscar en todo el sistema de archivos
+```
 find / -name nombre_archivo
-
+```
 # buscar en la carpeta actual
+```
 find -name nombre_archivi
-
-# buscar una carpeta
-find / -type f -name carpeta_que busco*
-find / -type d -name archivo_Que_busco*
-
-# buscar archivos que tengan ciertos permisos
-find / -type d -perm 777
-
-# buscar si el archivo está vacío
-find . -type f -empty
-
-# buscar por tamaño de archivo
-find . -size 21k
-find . -size 5M
-
-Modificados los datos en las últimas X*24h (- dtime n)
-find . -tipe f -dtime 2  (en las últimas 48h = 2*24)
-
-Accedidos en las últimas X*24h (- atime n)
-find . -tipe f -atime 2  (en las últimas 48h = 2*24)
-
-
-
-Buscar la localización de un fichero binario, fuente o manual
-
-whereis grep
-grep: /bin/grep /usr/share/man/man1/grep.1.gz /usr/share/man/man1p/grep.1p.gz
-
 ```
 
-Existe un paquete llamado __locate__ que también es usado para buscar.
-Este paquete no es nativo por lo que debe ser instalado
+# buscar una carpeta o archivos
+```
+find / -type f -name carpeta_que busco*
+find / -type d -name archivo_Que_busco*
+```
+# buscar archivos que tengan ciertos permisos
+```
+find / -type d -perm 777
+```
 
+# buscar si el archivo está vacío
+```
+find . -type f -empty
+```
+# buscar por tamaño de archivo
+```
+find . -size 21k
+find . -size 5M
+```
+# Modificados los datos en las últimas X*24h (- dtime n)
+```
+find . -tipe f -dtime 2  (en las últimas 48h = 2*24)
+```
+
+# Accedidos en las últimas X*24h (- atime n)
+```
+find . -tipe f -atime 2  (en las últimas 48h = 2*24)
+```
+
+
+# Buscar la localización de un fichero binario, fuente o manual
+```
+whereis grep
+grep: /bin/grep /usr/share/man/man1/grep.1.gz /usr/share/man/man1p/grep.1p.gz
+```
+
+# Existe un paquete llamado __locate__ que también es usado para buscar.
+### Este paquete no es nativo por lo que debe ser instalado
 ```
 apt-get install mlocate
 ```
-luego hay que crear una base de datos con el indice de los archivos del sistema
+## luego hay que crear una base de datos con el indice de los archivos del sistema
 ```
 updatedb
 ```
-luego podremos buscar con locate
+## luego podremos buscar con locate
 ```
 locate nombre_paquete
 ```
 
-Zona Horaria
+# Zona Horaria
 
-instalar el paquete en caso de que no esté instalado:
+## instalar el paquete en caso de que no esté instalado:
 ```
 apt-get install tzdata
 ```
-Opción para configurar la zona horaria con una sola linea creando un enlace simbolico 
+## Opción para configurar la zona horaria con una sola linea creando un enlace simbolico 
 ```
 ln -fs /usr/share/zoneinfo/America/Argentina/Buenos_Aires /etc/localtime && dpkg-reconfigure -f noninteractive tzdata
 ```
-
 
 # listar zona horaria actual
 ```
@@ -223,41 +232,53 @@ apt-get clean nombre_paquete
 ```
 
 # Procesos
-```
+
 # listar todos los procesos
+```
 ps -a
-
+```
 # version completa
+```
 ps -axF
-
+```
 # matar procesos por su número pid
+```
 kill -9 numero_proceso
-
+```
 # matar procesos por su nombre
+```
 pkill nombre_proceso
 ```
 
-Cambiar contraseña
-```
-# cambiar contraseña del usuario actual
-passwd
+# Cambiar contraseña
 
+# cambiar contraseña del usuario actual
+```
+passwd
+```
 # cambiar clave de algun usuer especifico
+```
 passwd nombre_user
 ```
 
-Ubicación de los archivos Logs en Ubuntu:
-```
-# logs de instalaciones
-/var/log/apt/history.log
+# Ubicación de los archivos Logs en Ubuntu:
 
+# logs de instalaciones
+```
+/var/log/apt/history.log
+```
 # errores del sistema
+```
 /var/log/apport.log
+```
 
 # registro de logins 
+```
 /var/log/auth.log
+```
 
 # servicio de logs iniciar, detener, reiniciar
+```
 service rsyslog status
 service rsyslog start
 service rsyslog stop
@@ -265,86 +286,85 @@ service rsyslog restart
 ```
 
 
-Monitoreo de Logs y demas
-```
+# Monitoreo de Logs y demas
 # mostrar log en tiempo real
+```
 tail -f 
-
+```
 # mostrar cierta cantidad de lineas de un log
+```
 tail -n ruta_archivo   (donde n será el numero de lineas que se quiera mostrar)
 ```
 
 
 
-Intentos de acceso como root
+# Intentos de acceso como root
 ```
 grep root /var/log/auth.log |tail -10
 ```
 
-Logs Mysql
+# Logs Mysql
 ```
 cat /var/log/mysql/error.log
 ```
 
-Log Servidor Apache 
+# Log Servidor Apache 
 ```
 cat /var/log/apache2/error.log
 ```
 
-Nginx Accesos
+# Nginx Accesos
 ```
 cat /var/log/nginx/access.log | tail -10
 ```
-Log de Nginx 
+# Log de Nginx 
 ```
 cat /var/log/nginx/error.log
 ```
 
-Log del Mail Server 
+# Log del Mail Server 
 ```
 tail -10 /var/log/mail.err
 ```
 
-Tiempos de respuesta del servidor
+# Tiempos de respuesta del servidor
 ```
 iostat
 ```
 
-cuanto tiempo hace que el server está arriba.
+# cuanto tiempo hace que el server está arriba.
 ```
 uptime
 ```
 
-Salud del disco rígido
+# Salud del disco rígido
 ```
 df -h
 ```
 
-Memoria RAM disponible
+# Memoria RAM disponible
 ```
 free -h
 ```
 
 
-Verificacion de Procesos
+# Verificacion de Procesos
 ```
 top
 ```
 
 
-Verificacion de puertos
-
+# Verificacion de puertos
 ```
 netstat -atun 
 ```
 
-Verificar que Proceso tiene tomado un puerto:
-
+# Verificar que Proceso tiene tomado un puerto:
 ```
 netstat -tulpn
 ```
 
-Restablecer el escritorio de Ubuntu
+# Restablecer el escritorio de Ubuntu
 ```
 dconf reset -f /
 ```
