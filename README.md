@@ -1,4 +1,4 @@
-# Comandos LINUX para Administración y Monitoreo
+# Comandos LINUX Manual de Bolsillo   
 
 - [x] Ale DC
 
