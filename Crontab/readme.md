@@ -1,4 +1,4 @@
-# Crontab - uso Básico y Comandos
+# Crontab - Uso Básico y Comandos
 
 [![aledc.com](https://github.com/aledc7/Scrum-Certification/blob/master/recursos/aledc.com.svg)](https://aledc.com)
 [![License](https://github.com/aledc7/Scrum-Certification/blob/master/recursos/mit-license.svg)](https://aledc.com)
@@ -54,10 +54,9 @@ crontab -u nombre_user # es para ver o editar el cron de otros usuarios
 
 ## FORMATO DE LAS TAREAS
 
-Las tareas cron tienen 5 asteriscos separados por espacios, seguidos del comando a ejecutar. 
+Las tareas cron tienen 5 asteriscos __separados por espacios__, seguidos del comando a ejecutar. 
 
 
-* * * * * /bin/ejecutar/script.sh
 
 ## Los 5 asteriscos
 
