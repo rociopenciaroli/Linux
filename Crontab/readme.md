@@ -35,4 +35,9 @@ Algunos ejemplos:
 @monthly  /home/aledc/scripts/respaldo.sh
 ```
 
+## Ejecutar tarea de Lunes a Viernes a las 8:00
+```js
+0 8 * * 1-5 /home/aledc/restart_dockers.sh
+````
+
 
