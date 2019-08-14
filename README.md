@@ -288,7 +288,7 @@ passwd nombre_user
 ```
 
 # servicio de logs iniciar, detener, reiniciar
-```
+```php
 service rsyslog status
 service rsyslog start
 service rsyslog stop
@@ -298,33 +298,33 @@ service rsyslog restart
 
 # Monitoreo de Logs y demas
 # mostrar log en tiempo real
-```
+```php
 tail -f 
 ```
 # mostrar cierta cantidad de lineas de un log
-```
+```php
 tail -n ruta_archivo   (donde n será el numero de lineas que se quiera mostrar)
 ```
 
 
 
 # Intentos de acceso como root
-```
+```php
 grep root /var/log/auth.log |tail -10
 ```
 
 # Logs Mysql
-```
+```php
 cat /var/log/mysql/error.log
 ```
 
 # Log Servidor Apache 
-```
+```php
 cat /var/log/apache2/error.log
 ```
 
 # Nginx Accesos
-```
+```php
 cat /var/log/nginx/access.log | tail -10
 ```
 # Log de Nginx 
@@ -333,27 +333,27 @@ cat /var/log/nginx/error.log
 ```
 
 # Log del Mail Server 
-```
+```php
 tail -10 /var/log/mail.err
 ```
 
 # Tiempos de respuesta del servidor
-```
+```php
 iostat
 ```
 
 # cuanto tiempo hace que el server está arriba.
-```
+```php
 uptime
 ```
 
 # Salud del disco rígido
-```
+```php
 df -h
 ```
 
 # Memoria RAM disponible
-```
+```php
 free -h
 ```
 
@@ -365,12 +365,12 @@ top
 
 
 # Verificacion de puertos
-```
+```php
 netstat -atun 
 ```
 
 # Verificar que Proceso tiene tomado un puerto:
-```
+```php
 netstat -tulpn
 ```
 
@@ -384,7 +384,7 @@ dconf reset -f /
 
 1. - Primero se debe ver como se llama la unidad que se quiere montar
 
-```
+```php
 sudo fdisk -l
 ````
 
@@ -396,12 +396,12 @@ allí se listaran todas las unidades, se debe buscar algo parecido a  __/dev/sdb
 sudo  mkdir /media/usb
 ```
 3. Una vez tenemos la carpeta creada solo resta montar
-```
+```php
 sudo mount /dev/sdb1 /media/usb
 ````
 
 4. una vez tranajado con el disco, se deberá desmontar
-```
+```php
 sudo umount /media/usb
 ```
 
