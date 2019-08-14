@@ -379,5 +379,32 @@ netstat -tulpn
 dconf reset -f /
 ```
 
+# Montar Unidades de Discos externos en la terminal
+
+
+1. - Primero se debe ver como se llama la unidad que se quiere montar
+
+```
+sudo fdisk -l
+````
+
+allí se listaran todas las unidades, se debe buscar algo parecido a  __/dev/sdb1__. 
+
+2. Una vez tengamos identificado el disco tenemos que crear una carpeta para montarlo, para seguir las convenciones de ubuntiu es recomendable montarlo en la carpeta __/media/usb/__
+```
+
+sudo  mkdir /media/usb
+```
+3. Una vez tenemos la carpeta creada solo resta montar
+```
+sudo mount /dev/sdb1 /media/usb
+````
+
+4. una vez tranajado con el disco, se deberá desmontar
+```
+sudo umount /media/usb
+```
+
+
 
 
