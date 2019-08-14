@@ -390,11 +390,12 @@ sudo fdisk -l
 
 allí se listaran todas las unidades, se debe buscar algo parecido a  __/dev/sdb1__. 
 
-2. Una vez tengamos identificado el disco tenemos que crear una carpeta para montarlo, para seguir las convenciones de ubuntiu es recomendable montarlo en la carpeta __/media/usb/__
+2. - Una vez tengamos identificado el disco tenemos que crear una carpeta para montarlo, para seguir las convenciones de ubuntiu es recomendable montarlo en la carpeta __/media/usb/__
 ```php    
 sudo  mkdir /media/usb
 ```
 3. Una vez tenemos la carpeta creada solo resta montar
+
 ```php
 sudo mount /dev/sdb1 /media/usb
 ````
