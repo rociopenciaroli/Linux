@@ -7,12 +7,14 @@
 
 
 
-Como solucionar el error de espacio insuficiente:
+Como solucionar el error de __Espacio Insuficiente__ al querer actualizar el Sistema Operativo:
+
+Error:
 ```php
 At least xMB more space needed on the /boot filesystem
 ````
 
-Listar kernel para ver cuantos tenemos (debe quedar solo 1)
+Primero, Listar kernel para ver cuantos tenemos (debe quedar solo 1)
 ```php
 yum list kernel
 ````
