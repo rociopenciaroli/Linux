@@ -400,7 +400,7 @@ sudo  mkdir /media/usb
 sudo mount /dev/sdb1 /media/usb
 ````
 
-4. una vez tranajado con el disco, se deberá desmontar
+4. una vez trabajado con el disco, se deberá desmontar
 ```php
 sudo umount /media/usb
 ```
