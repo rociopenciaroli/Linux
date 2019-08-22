@@ -57,7 +57,7 @@ crontab -u nombre_user # es para ver o editar el cron de otros usuarios
 ```
 
 
-```php
+```json
  ┌────────── minutos (0 - 59)
  │ ┌──────── hora (0 - 23)
  │ │ ┌────── dias del mes (1 - 31)
