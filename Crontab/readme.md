@@ -57,6 +57,18 @@ crontab -u nombre_user # es para ver o editar el cron de otros usuarios
 ```
 
 
+```php
+ ┌────────── minutos (0 - 59)
+ │ ┌──────── hora (0 - 23)
+ │ │ ┌────── dias del mes (1 - 31)
+ │ │ │ ┌──── mes (1 - 12)
+ │ │ │ │ ┌── dia de la semana (0 - 6 => Domingo - Sabado, o también
+ │ │ │ │ │                1 - 7 => Lunes - Domingo)
+ ↓ ↓ ↓ ↓ ↓
+ * * * * * y acá el comando a ejecutar
+```
+
+
 ## FORMATO DE LAS TAREAS
 
 Las tareas cron tienen 5 asteriscos __separados por espacios__, seguidos del comando a ejecutar. 
