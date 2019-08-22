@@ -44,6 +44,11 @@ crontab -u nombre_user # es para ver o editar el cron de otros usuarios
 0 8 * * 1-5 /home/aledc/restart_dockers.sh
 ````
 
+# Ejecuta el script de backupde Lunes a Viernes a las 17:30hs y lo comprime, en la carpeta home/aledc/backup/
+```php
+30 17 * * 1-5 /home/aledc/project/sistema/backup.sh
+````
+
 
 ```js
 @daily root apt-get update
@@ -75,6 +80,8 @@ Si por alguna razón, crontab no ejecuta el script a la hora indicada, esto pued
 ```php
 sudo /etc/init.d/cron restart
 ````
+
+
 
 
 
