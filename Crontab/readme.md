@@ -67,3 +67,15 @@ Las tareas cron tienen 5 asteriscos __separados por espacios__, seguidos del com
 - __Mes__: de 1 a 12.
 - __Día de la semana__: de 0 a 6, siendo 0 el domingo.
 
+
+
+# Troubleshooting 
+Si por alguna razón, crontab no ejecuta el script a la hora indicada, esto puede solucionarse reiniciando el servicio
+
+```php
+sudo /etc/init.d/cron restart
+````
+
+
+
+
