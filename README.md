@@ -408,9 +408,9 @@ sudo umount /media/usb
 
 ### Automatizando un Commit y Push
 
-Script para automatizar todo el proceso de un push, agregando primero los archivos con add, luego haciendo el commit, y finalmente el push a la rama master.
+Script para automatizar todo el proceso de un push, agregando primero los archivos con add, luego haciendo el commit, y finalmente el push a la rama master.   
 Para crear este script, primero es necesario saber en que carpeta del servidor linux se encuentra git.  
-Esto puede saberse con este commando
+Esto puede saberse con este commando:   
 ```php
 whereis git
 ````
