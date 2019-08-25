@@ -12,11 +12,11 @@
 ## Mostrar el nombre del servidor en el prompt.
 
 
-1- Editar el archivo ./ohmyzsh.sh
+1- Editar el archivo ./.zshrc  que se encuentra en la carpeta /home/usuario
 
 2- Agregar al final del archivo la siguiente linbea:
 
 ```php
 PROMPT='%(!.%{%F{yellow}%}.)$USER @ %{$fg[white]%}%M %{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
 ````
-
+3- relanzar terminal
