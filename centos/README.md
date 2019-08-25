@@ -6,7 +6,12 @@
 # Comandos de Centos
 
 
+## Cambiar zona horaria
+```php
+sudo timedatectl set-timezone America/Argentina/Buenos_Aires
+````
 
+## Actualizar Sistema Operativo
 Como solucionar el error de __Espacio Insuficiente__ al querer actualizar el Sistema Operativo:
 
 Error:
