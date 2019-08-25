@@ -50,5 +50,12 @@ Luego de actualizar con el update, nuevamente podemos borrar el kernel anterior,
 sudo rpm -e kernel-3.10.0-862.9.1.el7.x86_64
 ````
 
+## Instalar última versión de git
+```php
+$ sudo yum install https://centos7.iuscommunity.org/ius-release.rpm
+$ sudo yum erase git
+$ sudo yum install epel-release 
+$ sudo yum install git2u
+````
 
 
