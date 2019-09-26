@@ -347,9 +347,12 @@ iostat
 uptime
 ```
 
-### Salud del disco rígido
+### Espacio en Disco
 ```php
 df -h
+
+# para listar las carpetas y cuanto espacio ocuoan:
+du -h --max-depth=1 | sort -hr
 ```
 
 ### Memoria RAM disponible
